@@ -2,9 +2,10 @@
   <div>
     <p>
       Name:
-      <router-link :to="{ name: 'Country', params: ' e ' }">{{
-        country.name.common
-      }}</router-link>
+      <router-link
+        :to="{ name: 'country', params: { country: country.name.official } }"
+        >{{ country.name.common }}</router-link
+      >
     </p>
     <p>
       Flag:

@@ -1,5 +1,8 @@
 <template>
-  <div>this is home</div>
+  <div>
+    this is home
+    <i>🤠</i>
+  </div>
 </template>
 
 
