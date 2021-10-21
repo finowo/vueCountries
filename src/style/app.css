@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600&family=Libre+Franklin:wght@400;500&display=swap');
+
+/* //////////////////////colors////////////////////// */
+:root{
+    --purple: #79589E;
+    --purple-light: #A896BE;
+    --purple-lightest: #F6F2FA;
+    --blue: #408FEC;
+    --blue-light: #8EBDF1;
+    --blue-lightest: #F6FAFF;
+    --green: #74C080;
+    --green-light: #ABD7B4;
+    --green-lightest: #F8FCF9;
+    --orange: #FA9F47;
+    --orange-light: #FBC595;
+    --orange-lightest: #FFFAF6;
+    --red: #D54141;
+    --red-light: #E48E8E;
+    --red-lightest: #FDF6F6;
+
+    --text: #D9DEEA;
+    --accent1: #596981;
+    --accent2: #96A3B6;
+    --accent3: #CFD7E6;
+    --bg: #4E535A; 
+}
+
+.dark{
+    --text: #252525;
+    --accent1: #E3E7EF;
+    --accent2: #EEF1F6;
+    --accent3: #F7F8FB;
+    --bg: #FBFBFD;
+}
+
+.light{
+    --text: #D9DEEA;
+    --accent1: #596981;
+    --accent2: #96A3B6;
+    --accent3: #CFD7E6;
+    --bg: #4E535A;
+}
+/* //////////////////////colors////////////////////// */
+
+/* //////////////////////typeface////////////////////// */
+ h1{ /* heading */
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 500;
+    font-size: 48px;
+    color: var(--text);
+}
+
+h2{ /* sub-heading */
+    font-family: 'Inconsolata', monospace;
+    font-weight: 600;
+    font-size: 36px;
+    color: var(--text);
+}
+
+h3{ /* body text */
+    font-family: 'Libre Franklin', sans-serif;
+    font: weight 400px;
+    font-size: 18px;
+    color: var(--text);
+}
+
+h4{ /* body text alt */
+    font-family: 'Inconsolata', monospace;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--text);
+}
+/* //////////////////////typeface////////////////////// */
+
+/* //////////////////////bg////////////////////// */
+body{
+    background-color: var(--bg);
+}
+/* //////////////////////bg////////////////////// */
+
+

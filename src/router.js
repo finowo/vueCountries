@@ -16,14 +16,15 @@ export default new VueRouter({
             component: Home
         },
         {
+            path: '/countries/all',
+            name: 'AllCountries',
+            component: AllCountries
+        },
+        {
             path: '/countries/:country',
             name: 'country',
             component: Country
         },
-        {
-            path: '/countries/all',
-            name: 'AllCountries',
-            component: AllCountries
-        }
+
     ]
 })
