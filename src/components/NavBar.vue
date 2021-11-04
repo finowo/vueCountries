@@ -5,7 +5,7 @@
 				<li>
 					<router-link class="nav-link" :to="{ name: 'Home' }"
 						><img
-							src="..\assets\home.svg"
+							src="../assets/home.svg"
 							width="40"
 							alt="home"
 						/><span class="homeText link1"
