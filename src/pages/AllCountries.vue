@@ -1,11 +1,11 @@
 <template>
-	<div>
+	<b-card-group columns>
 		<CountryViewer
 			v-for="country in countries"
 			:key="country.ccn3"
 			:country="country"
 		/>
-	</div>
+	</b-card-group>
 </template>
 
 <script>
@@ -25,7 +25,7 @@ export default {
 	mounted() {
 		axios
 			.get(
-				"https://restcountries.com/v3.1/all?fields=name,capital,currencies,flag"
+				"https://restcountries.com/v3.1/all?fields=name,capital,currencies,flags"
 			)
 			.then(response => {
 				console.log(response.data);
