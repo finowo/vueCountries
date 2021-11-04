@@ -1,17 +1,31 @@
 <template>
-	<div>
-		<h1>{{ $route.params.country }} || {{ countries.capital[0] }}</h1>
-		<h2>Crime index: {{ countryIndices[0].crime_index }}</h2>
-		<h2>Safety index: {{ countryIndices[0].safety_index }}</h2>
-		<h2>Rent index: {{ countryIndices[0].rent_index }}</h2>
-		<h2>QOL index: {{ countryIndices[0].quality_of_life_index }}</h2>
-		<h3>Timezone: {{ countryWeather[0].timezone }}</h3>
-		<h3>Current Temperature: {{ countryWeather[0].temp }}</h3>
-		<h3>
-			Current Weather Conditions:
-			{{ countryWeather[0].weather.description }}
-		</h3>
-		<h3>Local Date and Time: {{ countryWeather[0].datetime }}</h3>
+	<div class="awesome fluid heroSection">
+		<section
+			class="woah heroContent container d-flex justify-content-between align-items-center"
+		>
+			<div class="col-xl-6 col-md-8">
+				<h1 class="heroTextHeading">
+					{{ $route.params.country }} || {{ countries.capital[0] }}
+				</h1>
+				<h2>Crime index: {{ countryIndices[0].crime_index }}</h2>
+				<h2>Safety index: {{ countryIndices[0].safety_index }}</h2>
+				<h2>Rent index: {{ countryIndices[0].rent_index }}</h2>
+				<h2>
+					QOL index: {{ countryIndices[0].quality_of_life_index }}
+				</h2>
+			</div>
+			<div class="col-xl-6 col-md-8">
+				<h3>Timezone: {{ countryWeather[0].timezone }}</h3>
+				<h3>Current Temperature: {{ countryWeather[0].temp }}</h3>
+				<h3>
+					Current Weather Conditions:
+					{{ countryWeather[0].weather.description }}
+				</h3>
+				<h3>Local Date and Time: {{ countryWeather[0].datetime }}</h3>
+			</div>
+		</section>
+
+		<h1></h1>
 	</div>
 </template>
 
@@ -79,4 +93,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+section.woah {
+	margin-bottom: 300px;
+}
+</style>

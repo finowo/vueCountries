@@ -1,21 +1,26 @@
 <template>
-	<b-container id="app">
+	<div>
 		<NavBar />
-		<b-row>
-			<b-col>
-				<router-view />
-			</b-col>
-		</b-row>
-	</b-container>
+		<b-container id="app">
+			<b-row>
+				<b-col>
+					<router-view />
+				</b-col>
+			</b-row>
+		</b-container>
+		<Footer />
+	</div>
 </template>
 
 <script>
 import NavBar from "@/components/NavBar";
+import Footer from "@/components/Footer";
 
 export default {
 	name: "App",
 	components: {
-		NavBar
+		NavBar,
+		Footer
 	}
 };
 </script>

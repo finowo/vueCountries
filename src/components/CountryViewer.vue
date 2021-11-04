@@ -8,8 +8,7 @@
 	>
 		<b-card-text>
 			{{ country.capital[0] }} is the capital of this country and this is
-			filler text ahahahhah lmao oof xd ooh eeh ooh ahha ahh ting tang
-			walla walla bing bang
+			filler text.
 		</b-card-text>
 
 		<router-link
